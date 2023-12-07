@@ -99,8 +99,30 @@ a {
 .nav_items li a {
     font-size: 1.33rem;
     text-decoration: none;
+    transition: all 0.3s ease-in-out;
 }
 
 .nav_item6 {
     margin-left: 2em;
+    animation: log_in_animation 0.9s ease-in-out forwards;
+}
+
+.item_link:hover {
+    color: #e6354a;
+    text-decoration: underline;
+}
+
+
+/*##############animation_for_login_button################*/
+
+@keyframes log_in_animation {
+    0% {
+        background-color: transparent;
+        border-radius: 100%;
+    }
+
+    100% {
+        background-color: #e6354a;
+        border-radius: 0.5rem 2.5rem;
+    }
 }
